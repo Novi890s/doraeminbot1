@@ -4,7 +4,7 @@ const path = require('path');
 const Client = require('./structures/Client');
 const client = new Client({
 	commandPrefix: XIAO_PREFIX,
-	owner: OWNERS.split('-');
+	owner: OWNERS.split(",")
 	invite: INVITE,
 	disableEveryone: true,
 	disabledEvents: ['TYPING_START']
